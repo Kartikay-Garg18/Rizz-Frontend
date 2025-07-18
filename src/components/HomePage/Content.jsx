@@ -70,14 +70,20 @@ function Content() {
                             </Link>
                         </motion.div>
                     </motion.div>
-                    {/* Right Image */}
+                    {/* Right Image - Hero Image */}
                     <motion.div variants={itemVariants} className="relative">
                         <div className="relative backdrop-blur-sm bg-white/10 rounded-3xl p-8 shadow-2xl border border-white/20">
                             <img
-                                src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847887/home_hxsf2m.png"
+                                src="https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_800/v1752847887/home_hxsf2m"
                                 alt="RIZZ Communication"
                                 className="w-full h-auto rounded-2xl shadow-2xl object-cover"
-                                loading="lazy" // ✓ Already implemented
+                                loading="lazy"
+                                srcSet="
+                                    https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_400/v1752847887/home_hxsf2m 400w,
+                                    https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_800/v1752847887/home_hxsf2m 800w,
+                                    https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_1200/v1752847887/home_hxsf2m 1200w
+                                "
+                                sizes="(max-width: 768px) 400px, (max-width: 1200px) 800px, 1200px"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent rounded-2xl"></div>
                         </div>
@@ -165,10 +171,16 @@ function Content() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
-                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847888/Instant_gny5sh.png"
+                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_600/v1752847888/Instant_gny5sh"
                                         alt="Real time application"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
-                                        loading="lazy" // Add this
+                                        loading="lazy"
+                                        srcSet="
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_300/v1752847888/Instant_gny5sh 300w,
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_600/v1752847888/Instant_gny5sh 600w,
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_900/v1752847888/Instant_gny5sh 900w
+                                        "
+                                        sizes="(max-width: 768px) 300px, (max-width: 1200px) 600px, 900px"
                                     />
                                 </div>
                             </div>
@@ -182,10 +194,16 @@ function Content() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
-                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847888/Themes_abiok3.png"
+                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_600/v1752847888/Themes_abiok3"
                                         alt="Theme customization"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
-                                        loading="lazy" // Add this
+                                        loading="lazy"
+                                        srcSet="
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_300/v1752847888/Themes_abiok3 300w,
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_600/v1752847888/Themes_abiok3 600w,
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_900/v1752847888/Themes_abiok3 900w
+                                        "
+                                        sizes="(max-width: 768px) 300px, (max-width: 1200px) 600px, 900px"
                                     />
                                 </div>
                             </div>
@@ -217,10 +235,16 @@ function Content() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-cyan-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
-                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847887/Security_f0klbr.png"
+                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_600/v1752847887/Security_f0klbr"
                                         alt="Security features"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
-                                        loading="lazy" // Add this
+                                        loading="lazy"
+                                        srcSet="
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_300/v1752847887/Security_f0klbr 300w,
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_600/v1752847887/Security_f0klbr 600w,
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_900/v1752847887/Security_f0klbr 900w
+                                        "
+                                        sizes="(max-width: 768px) 300px, (max-width: 1200px) 600px, 900px"
                                     />
                                 </div>
                             </div>
@@ -234,10 +258,16 @@ function Content() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
-                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847886/Lag_wuvq7z.png"
+                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_600/v1752847886/Lag_wuvq7z"
                                         alt="Performance optimization"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
-                                        loading="lazy" // Add this
+                                        loading="lazy"
+                                        srcSet="
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_300/v1752847886/Lag_wuvq7z 300w,
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_600/v1752847886/Lag_wuvq7z 600w,
+                                            https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_900/v1752847886/Lag_wuvq7z 900w
+                                        "
+                                        sizes="(max-width: 768px) 300px, (max-width: 1200px) 600px, 900px"
                                     />
                                 </div>
                             </div>
@@ -286,7 +316,7 @@ function Content() {
                                 to="/signup"
                                 className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                             >
-                                Get RIZZ
+                                Join RIZZ Today
                             </Link>
                         </motion.div>
                         <motion.a
