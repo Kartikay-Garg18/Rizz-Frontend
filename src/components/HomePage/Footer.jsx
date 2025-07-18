@@ -78,7 +78,6 @@ function Footer() {
                     variants={itemVariants}
                     className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center"
                 >
-                    {/* Logo and brand section */}
                     <motion.div
                         variants={itemVariants}
                         className="text-center lg:text-left"
@@ -92,7 +91,6 @@ function Footer() {
                             Experience the future of communication with lightning-fast, secure, and intuitive messaging.
                         </p>
                     </motion.div>
-                    {/* Social media section */}
                     <motion.div
                         variants={itemVariants}
                         className="flex justify-center"
@@ -109,9 +107,7 @@ function Footer() {
                                     className="relative group"
                                 >
                                     <div className="relative">
-                                        {/* Gradient background */}
                                         <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${social.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm`}></div>
-                                        {/* Button container */}
                                         <div className="relative w-14 h-14 rounded-full backdrop-blur-sm bg-white/10 border border-white/20 flex items-center justify-center transition-all duration-300 group-hover:bg-white/20">
                                             <img
                                                 src={social.icon}
@@ -120,7 +116,6 @@ function Footer() {
                                             />
                                         </div>
                                     </div>
-                                    {/* Tooltip */}
                                     <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                                         {social.name}
                                     </div>
@@ -128,7 +123,6 @@ function Footer() {
                             ))}
                         </div>
                     </motion.div>
-                    {/* Call to action section */}
                     <motion.div
                         variants={itemVariants}
                         className="text-center lg:text-right"
@@ -148,9 +142,7 @@ function Footer() {
                         <p className="text-gray-400 text-sm">Start your journey with us</p>
                     </motion.div>
                 </motion.div>
-                {/* Divider */}
                 <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-                {/* Bottom section */}
                 <motion.div
                     variants={itemVariants}
                     className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
@@ -185,7 +177,6 @@ function Footer() {
                     </motion.div>
                 </motion.div>
             </div>
-            {/* Bottom gradient line */}
             <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500"></div>
         </motion.footer>
     );

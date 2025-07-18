@@ -39,14 +39,12 @@ function Header() {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
-                    {/* Logo Section */}
                     <div className="flex items-center space-x-4">
                         
                         <h1 className="text-2xl lg:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400">
                             RIZZ
                         </h1>
                     </div>
-                    {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-1">
                         {navigationItems.map((item) => (
                             <a
@@ -62,7 +60,6 @@ function Header() {
                             </a>
                         ))}
                     </nav>
-                    {/* Right Section */}
                     <div className="flex items-center space-x-4">
                         <Link to="/login" className="hidden sm:inline-flex">
                             <button
@@ -72,7 +69,6 @@ function Header() {
                                 <div className="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </button>
                         </Link>
-                        {/* Mobile Menu Button */}
                         <button
                             className="lg:hidden p-2 text-gray-300 hover:text-white transition-colors duration-300"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -85,7 +81,6 @@ function Header() {
                         </button>
                     </div>
                 </div>
-                {/* Mobile Menu */}
                 {isMenuOpen && (
                     <div className="lg:hidden overflow-hidden">
                         <div className="px-4 py-6 space-y-4 backdrop-blur-sm bg-white/5 rounded-2xl mt-4 border border-white/10">

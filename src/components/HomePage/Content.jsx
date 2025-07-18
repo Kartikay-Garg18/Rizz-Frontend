@@ -70,8 +70,8 @@ function Content() {
                             </Link>
                         </motion.div>
                     </motion.div>
-                    {/* Right Image - Hero Image */}
-                    <motion.div variants={itemVariants} className="relative">
+                    
+                    <motion.div variants={itemVariants} className="relative hidden lg:block">
                         <div className="relative backdrop-blur-sm bg-white/10 rounded-3xl p-8 shadow-2xl border border-white/20">
                             <img
                                 src="https://res.cloudinary.com/dtkqxxlmk/image/upload/f_auto,q_auto,w_800/v1752847887/home_hxsf2m"
@@ -91,10 +91,8 @@ function Content() {
                 </div>
             </motion.section>
 
-            {/* Section Divider */}
             <div className="my-12 h-1 w-full bg-gradient-to-r from-transparent via-purple-500 to-transparent max-w-7xl mx-auto"></div>
 
-            {/* Why Choose RIZZ Section */}
             <motion.section
                 id="about"
                 initial="hidden"
@@ -129,10 +127,8 @@ function Content() {
                 </div>
             </motion.section>
 
-            {/* Section Divider */}
             <div className="my-12 h-1 w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent max-w-7xl mx-auto"></div>
 
-            {/* Features Section */}
             <motion.section
                 id="features"
                 initial="hidden"
@@ -153,7 +149,6 @@ function Content() {
                     </motion.h2>
 
                     <div className="grid gap-16">
-                        {/* Feature 1 - Real Time Chatting */}
                         <motion.div
                             variants={itemVariants}
                             className="grid lg:grid-cols-2 gap-8 items-stretch"
@@ -167,7 +162,7 @@ function Content() {
                                     Our real-time infrastructure ensures zero lag, making conversations feel as natural as face-to-face interactions.
                                 </p>
                             </div>
-                            <div className="relative">
+                            <div className="relative hidden lg:block">
                                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
@@ -185,12 +180,11 @@ function Content() {
                                 </div>
                             </div>
                         </motion.div>
-                        {/* Feature 2 - Personalized Themes */}
                         <motion.div
                             variants={itemVariants}
                             className="grid lg:grid-cols-2 gap-8 items-stretch"
                         >
-                            <div className="relative lg:order-1">
+                            <div className="relative lg:order-1 hidden lg:block">
                                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
@@ -217,7 +211,6 @@ function Content() {
                                 </p>
                             </div>
                         </motion.div>
-                        {/* Feature 3 - Advanced Security */}
                         <motion.div
                             variants={itemVariants}
                             className="grid lg:grid-cols-2 gap-8 items-stretch"
@@ -231,7 +224,7 @@ function Content() {
                                     your conversations remain private and protected from unauthorized access.
                                 </p>
                             </div>
-                            <div className="relative">
+                            <div className="relative hidden lg:block">
                                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-cyan-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
@@ -249,12 +242,11 @@ function Content() {
                                 </div>
                             </div>
                         </motion.div>
-                        {/* Feature 4 - Lag-Free Performance */}
                         <motion.div
                             variants={itemVariants}
                             className="grid lg:grid-cols-2 gap-8 items-stretch"
                         >
-                            <div className="relative lg:order-1">
+                            <div className="relative lg:order-1 hidden lg:block">
                                 <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
@@ -285,10 +277,8 @@ function Content() {
                 </div>
             </motion.section>
 
-            {/* Final Gradient Divider */}
             <div className="my-12 h-1 w-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 max-w-7xl mx-auto"></div>
 
-            {/* Call to Action Section */}
             <motion.section
                 initial="hidden"
                 whileInView="visible"
