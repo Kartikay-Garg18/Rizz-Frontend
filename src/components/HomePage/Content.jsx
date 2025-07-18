@@ -1,9 +1,4 @@
 import { motion } from 'framer-motion';
-import HeroImage from '../../assets/home.png'
-import InstantImage from '../../assets/Instant.png'
-import Personalised from '../../assets/Themes.png'
-import Security from '../../assets/Security.png'
-import Lag from '../../assets/Lag.png'
 import { Link } from 'react-router-dom';
 
 function Content() {
@@ -79,7 +74,7 @@ function Content() {
                     <motion.div variants={itemVariants} className="relative">
                         <div className="relative backdrop-blur-sm bg-white/10 rounded-3xl p-8 shadow-2xl border border-white/20">
                             <img
-                                src={HeroImage}
+                                src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847887/home_hxsf2m.png"
                                 alt="RIZZ Communication"
                                 className="w-full h-auto rounded-2xl shadow-2xl object-cover"
                                 loading="lazy" // ✓ Already implemented
@@ -170,7 +165,7 @@ function Content() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
-                                        src={InstantImage}
+                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847888/Instant_gny5sh.png"
                                         alt="Real time application"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
                                         loading="lazy" // Add this
@@ -187,7 +182,7 @@ function Content() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
-                                        src={Personalised}
+                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847888/Themes_abiok3.png"
                                         alt="Theme customization"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
                                         loading="lazy" // Add this
@@ -222,7 +217,7 @@ function Content() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-cyan-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
-                                        src={Security}
+                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847887/Security_f0klbr.png"
                                         alt="Security features"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
                                         loading="lazy" // Add this
@@ -239,7 +234,7 @@ function Content() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl blur opacity-30"></div>
                                 <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden">
                                     <img
-                                        src={Lag}
+                                        src="https://res.cloudinary.com/dtkqxxlmk/image/upload/v1752847886/Lag_wuvq7z.png"
                                         alt="Performance optimization"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
                                         loading="lazy" // Add this
