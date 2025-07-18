@@ -82,6 +82,7 @@ function Content() {
                                 src={HeroImage}
                                 alt="RIZZ Communication"
                                 className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                                loading="lazy" // ✓ Already implemented
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent rounded-2xl"></div>
                         </div>
@@ -172,6 +173,7 @@ function Content() {
                                         src={InstantImage}
                                         alt="Real time application"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
+                                        loading="lazy" // Add this
                                     />
                                 </div>
                             </div>
@@ -188,6 +190,7 @@ function Content() {
                                         src={Personalised}
                                         alt="Theme customization"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
+                                        loading="lazy" // Add this
                                     />
                                 </div>
                             </div>
@@ -222,6 +225,7 @@ function Content() {
                                         src={Security}
                                         alt="Security features"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
+                                        loading="lazy" // Add this
                                     />
                                 </div>
                             </div>
@@ -238,6 +242,7 @@ function Content() {
                                         src={Lag}
                                         alt="Performance optimization"
                                         className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
+                                        loading="lazy" // Add this
                                     />
                                 </div>
                             </div>
