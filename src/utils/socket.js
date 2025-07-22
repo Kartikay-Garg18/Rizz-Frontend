@@ -9,7 +9,7 @@ let heartbeatInterval = null;
 
 export const getSocket = (userId) => {
   if (!socket) {
-    // Create Socket.io instance with enhanced configuration
+    // Create Socket.io instance with enhanced configuration for CORS issues
     socket = io(API_URI, {
       query: { 
         userId,
@@ -18,7 +18,7 @@ export const getSocket = (userId) => {
         timestamp: Date.now()
       },
       transports: ['polling', 'websocket'], // Start with polling to establish connection reliably
-      withCredentials: true, // Enable CORS credentials
+      withCredentials: false, // Disable credentials to avoid CORS preflight issues
       reconnectionAttempts: MAX_RECONNECT_ATTEMPTS, // Maximum number of reconnection attempts
       reconnectionDelay: 1000, // Initial delay before reconnection (ms)
       reconnectionDelayMax: 10000, // Maximum delay between reconnections (ms)
