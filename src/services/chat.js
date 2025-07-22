@@ -14,7 +14,12 @@ export const getUsers = async (dispatch) => {
   }
   try {
     const response = await axios.get(`${API_URI}/messages/user`, {
-      headers: { Authorization: `Bearer ${accessToken}` },
+      headers: { 
+        Authorization: `Bearer ${accessToken}`,
+        'Content-Type': 'application/json',
+        'Accept': 'application/json' 
+      },
+      withCredentials: false
     });
     if (response.data && response.data.data && response.data.data.filteredUsers) {
       dispatch(setUsers(response.data.data.filteredUsers));
@@ -29,7 +34,12 @@ export const getUsers = async (dispatch) => {
 export const getMessages = async (userId) => {
   try {
     const response = await axios.get(`${API_URI}/messages/${userId}`, {
-      headers: { Authorization: `Bearer ${accessToken}` },
+      headers: { 
+        Authorization: `Bearer ${accessToken}`,
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      withCredentials: false
     });
     return response.data.data.messages;
   } catch (error) {
@@ -52,7 +62,9 @@ export const sendMessage = async (receiverId, message) => {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           'Content-Type': 'multipart/form-data',
+          'Accept': 'application/json'
         },
+        withCredentials: false
       }
     )
     return response.data.data.newMessage

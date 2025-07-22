@@ -18,6 +18,12 @@ const createAccount = async (data) => {
             username : data.username,
             email : data.email,
             password : data.password
+        }, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            withCredentials: false
         });
 
     } catch (error) {
@@ -41,6 +47,12 @@ const login = async (data) => {
         const user = await axios.post(`${API_URI}/auth/login`, {
             email : data.email,
             password : data.password
+        }, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            withCredentials: false
         })
         
         if(!user){
