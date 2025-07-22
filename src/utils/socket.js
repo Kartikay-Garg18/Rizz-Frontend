@@ -17,7 +17,8 @@ export const getSocket = (userId) => {
         clientVersion: '1.0.0',
         timestamp: Date.now()
       },
-      transports: ['websocket', 'polling'], // Try WebSocket first, fall back to polling
+      transports: ['polling', 'websocket'], // Start with polling to establish connection reliably
+      withCredentials: true, // Enable CORS credentials
       reconnectionAttempts: MAX_RECONNECT_ATTEMPTS, // Maximum number of reconnection attempts
       reconnectionDelay: 1000, // Initial delay before reconnection (ms)
       reconnectionDelayMax: 10000, // Maximum delay between reconnections (ms)
